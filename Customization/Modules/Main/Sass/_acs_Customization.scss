@@ -1,0 +1,19 @@
+/* if badge is present make sure it shows floating above everything else */
+.gcustomization-badge {
+  z-index: 2000;
+}
+
+.acs-customization-terms-loginregister {
+  @extend .col-sm-6;
+  float:right;
+  text-align:right;
+}
+
+.acs-customization-terms-ordersubmit {
+  float:right;
+  text-align:right;
+}
+
+.acs-customization-checkout-clear {
+  clear: both;
+}

@@ -1,0 +1,72 @@
+{
+    "name": "Customization",
+    "fantasyName": "Customization",
+    "vendor": "ACS",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "22.1.1",
+        "SCS": "22.1.1"
+    },
+    "version": "4.2.2",
+    "description": "Customization",
+    "assets": {
+        "services": {
+            "files": [
+                "services/Customization.Configuration.Service.ss"
+            ]
+        }
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/Main/Templates/acs_customization_checkout_order_wizard_module.tpl",
+                    "Modules/Main/Templates/acs_customization_terms.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/Main/Sass/_acs_customization.scss"
+        },
+        "files": [
+            "Modules/Main/Sass/_acs_customization.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/Main/JavaScript/ACS.customization.EntryPoint.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/ACS.customization.EntryPoint.js",
+                    "Modules/customization/JavaScript/customization.Adapter.js",
+                    "Modules/Main/JavaScript/ACS.customization.Checkout.OrderWizard.Module.js",
+                    "Modules/customization/JavaScript/customization.Configuration.Model.js",
+                    "Modules/customization/JavaScript/customization.js",
+                    "Modules/Main/JavaScript/ACS.customization.GuestCheckoutHook.js",
+                    "Modules/Main/JavaScript/ACS.customization.LoginHook.js",
+                    "Modules/Main/JavaScript/ACS.customization.OrderSubmitHook.js",
+                    "Modules/Main/JavaScript/ACS.customization.RegistrationHook.js",
+                    "Modules/Main/JavaScript/ACS.customization.Terms.View.js",
+                    "Modules/Main/JavaScript/ACS.customization.TermsAndConditionsHook.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/Main/SuiteScript/ACS.customization.EntryPoint.js",
+        "files": [
+            "Modules/Main/SuiteScript/ACS.customization.EntryPoint.js",
+            "Modules/customization/SuiteScript/customization.Adapter.js",
+            "Modules/Utils/SuiteScript/customization.Utils.js",
+            "Modules/customization/SuiteScript/customization.Configuration.Model.js",
+            "Modules/customization/SuiteScript/customization.Configuration.ServiceController.js",
+            "Modules/Main/SuiteScript/ACS.customization.Account.Hook.js",
+            "Modules/Main/SuiteScript/ACS.customization.Cart.Hook.js"
+        ]
+    }
+}
