@@ -60,7 +60,7 @@ define(['N/runtime', 'N/search', 'N/record', 'N/email', 'N/file', 'N/error'],
 		}
 
 		function getAmountUnmatched(id, location, date, customer){
-			/* Hagan de cuenta que la funcion hace algo útil :) */
+			/* Assumes this code works */
 		}
 
 		return {
